@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>CRUD Example</title>
+</head>
+<body>
+    <div class="container">
+        <h2>CRUD Example</h2>
+        
+        <!-- Formulario para Insertar/Actualizar datos -->
+        <form action="conexion.php" method="post">
+            <input type="hidden" name="id" id="id">
+            <label for="name">MATRICULA:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">CONTRASEÑA:</label>
+            <input type="email" name="email" id="email" required>
+            <button type="submit" name="save">Guardar</button>
+        </form>
+
+        <!-- Tabla para mostrar datos -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>MATRICULA</th>
+                    <th>PASWORD</th>
+                    <th>TIPO USUARIO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se cargarán aquí desde la base de datos -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
